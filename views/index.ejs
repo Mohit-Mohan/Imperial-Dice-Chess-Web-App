@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dice Chess - DesEng Edition</title>
+
+		<!-- StyleSheet -->
+		<link id="themeStylesheet" rel="stylesheet"  href="../css/default.css" />
+	</head>
+	<body style="font-family: Arial, Helvetica, sans-serif;">
+		
+		<div class="container">
+			<div class="dice-wrapper">
+				<img  id="die-1" height="75px" width="75px" >
+				<img  id="die-2" height="75px" width="75px">
+				<img id="die-3" height="75px" width="75px"> 
+			</div>
+			<button onclick="tripleroll()">ROLL!</button>
+		</div>
+		<div id="parent">
+			<div class="player-card player-2">
+				<div class="rows row-1">   
+					<div class="icon"></div>
+					<div class="text">
+						<div class="headline"><h4></h4></div>
+						<div class="status">
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="rows row-2">
+				</div>
+			</div>
+
+			<div id="chessboard" class="chessboard"></div>
+
+			<div class="player-card player-1">
+				
+			
+				<div class="rows row-2" style="position: absolute; left: -270px; top: -130px;
+				background-color: #515157; width: 40%; color: white; padding: 10px;
+				border-radius: 5px; font-size: 13px;"><b>(White)</b><%=p %><b>(Black)</b>
+				</div>
+				<form action="/chess">
+					<button style="width: 25%; position: absolute; left: -230px; top: -225px; font-size: 15px;">
+						Start New Game</button>
+				</form>
+				<p style="font-size: 13px; position: absolute;left: -270px; top:-550px; color: white;
+				 margin-right:630px; padding: 10px;  background-color: #515157; border-radius: 5px;">
+					Since, theoretically black is at a disadvantage in chess, 
+					I decided to give black something fun to begin with!
+
+				<br>	For all black pieces, <br>
+
+				<br> <b>King = Prof. Peter Cheung</b>
+				<br>	<b>Queen = Dr. Freddie Page</b>
+				<br>	<b>Bishop = Dr. Celine Mougenot</b>
+				<br>	<b>Knight = Dr. Billy Wu</b>
+				<br>	<b>Rook = Dr. Sam Cooper</b>
+				</p>
+				<div class="rows row-1">
+					<div class="icon"></div>
+					<div class="text">
+						<div class="headline"><h4></h4></div>
+						<div class="status">
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<form action="" id="choices" style="position: absolute; left: 125px; ">
+			<label style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;
+			 color: white;">Select Theme</label>
+			<select name="themeSelect" id="themeSelect" style="padding: 5px; border-radius: 5px; 
+			font: 15px; font-weight: bold; background-color: #515157; color: white">
+				
+				<option value="default">Default</option>
+				<option value="design">Design</option>
+				<option value="computing">Computing</option>
+				<option value="math">Math</option>
+				<option value="mechanics">Mechanics</option>
+				<option value="electronics">Electronics</option>
+				<option value="pmat">PMat</option>
+			</select>
+				
+		</form>
+		<!-- Javascript -->
+		
+		<script src="/javascript/themes.js"></script> 
+		<script type = "module" src="/javascript/main.js"></script>
+		<script src="/javascript/dicePOST.js"></script> 
+
+		</body>
+</html>

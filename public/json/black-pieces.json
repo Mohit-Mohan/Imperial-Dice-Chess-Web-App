@@ -1,0 +1,42 @@
+[
+
+	{
+		"name": "Pawn",
+		"length": 8,
+		"alias": "bp",
+		"position": {
+			"letter": ["a", "b", "c", "d", "e", "f", "g", "h"],
+			"number": 7
+		}
+	},
+	{
+		"name": "Knight",
+		"length": 2,
+		"alias": "BW",
+		"position": { "letter": ["b", "g"], "number": 8 }
+	},
+	{
+		"name": "Bishop",
+		"length": 2,
+		"alias": "CM",
+		"position": { "letter": ["c", "f"], "number": 8 }
+	},
+	{
+		"name": "Rook",
+		"length": 2,
+		"alias": "SC",
+		"position": { "letter": ["a", "h"], "number": 8 }
+	},
+	{
+		"name": "Queen",
+		"length": 1,
+		"alias": "FP",
+		"position": { "letter": ["d"], "number": 8 }
+	},
+	{
+		"name": "King",
+		"length": 1,
+		"alias": "PC",
+		"position": { "letter": ["e"], "number": 8 }
+	}
+]
